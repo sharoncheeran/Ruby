@@ -6,6 +6,8 @@
 
 <%= link_to "Delete Article", article_path(@article), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
 
+<a href="/">Back</a>
+
 <h2>Comments</h2>
 
 <%= render @article.comments %>
@@ -13,5 +15,3 @@
 <h2>Add a comment</h2>
 
 <%= render 'comments/form' %>
-
-<a href="/">Back</a>
